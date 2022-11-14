@@ -3,9 +3,31 @@ module.exports = {
     fontFamily: {
       'sans': ['Helvetica', 'Arial', 'sans-serif']
     },
-    extend: {}
+    extend: {
+      keyframes: {
+	wiggle: {
+		'0%': { transform: 'rotate(0deg) scale(1)' },
+		'25%': { transform: 'rotate(-3deg) scale(1.05)' },
+		'50%': { transform: 'rotate(3deg) scale(1.1)' },
+		'75%': { transform: 'rotate(-3deg) scale(1.05)' },
+		'100%': { transform: 'rotate(0deg) scale(1)' }
+	},
+	fadeIn: {
+		'0%': {opacity: 0},
+		'100%': {opacity: 1}
+	}
+      },
+      animation: {
+      	wiggle: 'wiggle 1s ease-in-out',
+	fadeIn: 'fadeIn 2s ease-in forwards"
+      }
+    }
   },
-  variants: {},
+   variants: {
+     extend: {
+       animation: ['hover', 'focus', 'motion-safe'],
+     }
+  },
   plugins: [],
   purge: {
     // Filenames to scan for classes
