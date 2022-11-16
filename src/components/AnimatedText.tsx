@@ -1,6 +1,7 @@
 import React from 'react';
 import MenuSection from './MenuSection';
 import Navigation from './Navigation';
+import AnimatedLetter from './AnimatedLetter';
 
 interface Props {
     text: string
@@ -8,7 +9,7 @@ interface Props {
 
 const addSpan = (note: any) => {
   return [...note].map(letter =>
-      <label className="transition inline-block hover:animate-wiggle ease-in-out hover:text-base hover:text-green-300 duration-300" >{letter}</label>)
+      <AnimatedLetter letter={letter}/>)
 }
 
 const AnimatedText = (props : Props) => {
