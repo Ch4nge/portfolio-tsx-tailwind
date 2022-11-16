@@ -7,7 +7,7 @@ function App() {
   <>
     <div className="flex">
     <Menu/>
-    <div className="relative flex flex-col text-white bg-gradient-to-br from-gray-800 to-gray-900 w-full pl-40">
+    <div className="relative flex flex-col text-white bg-gradient-to-br from-gray-800 to-gray-900 w-full pl-40" id="top">
       <div className="h-screen flex flex-col justify-center" >
         <h1 className="font-bold text-8xl font-sans subpixel-antialiased">
           <AnimatedText text="Hi,"/>

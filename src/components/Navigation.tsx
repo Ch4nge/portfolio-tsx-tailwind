@@ -4,7 +4,7 @@ import NaviButton from './NaviButton'
 
 const Navigation = () =>
         <div className="flex flex-col justify-center">
-          <NaviButton link="#about" title="About"/>
+          <NaviButton link="#top" title="Frontpage"/>
           <NaviButton link="#technologies" title="Skills"/>
           <NaviButton link="#about" title="Work"/>
           <NaviButton link="#about" title="Contact"/>
