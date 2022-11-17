@@ -1,8 +1,4 @@
 import React, { useState } from 'react';
-import MenuSection from './MenuSection';
-import Navigation from './Navigation';
-
-
 
 interface Props {
     letter: string

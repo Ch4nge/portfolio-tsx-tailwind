@@ -1,6 +1,4 @@
 import React from 'react';
-import MenuSection from './MenuSection';
-import Navigation from './Navigation';
 import AnimatedLetter from './AnimatedLetter';
 
 interface Props {

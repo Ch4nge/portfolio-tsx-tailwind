@@ -1,6 +1,7 @@
 import React from 'react';
 import Menu from './components/Menu';
 import AnimatedText from './components/AnimatedText';
+import SkillCard from './components/SkillCard';
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
         <h2 className="font-bold text-4xl font-sans subpixel-antialiased bb-1" id="technologies">
 	  Technologies
         </h2>
+
+	<SkillCard />
       </div>
     </div>
     </div>

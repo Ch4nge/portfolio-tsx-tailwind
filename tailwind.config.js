@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   theme: {
     fontFamily: {
@@ -5,6 +7,9 @@ module.exports = {
     },
     extend: {
       keyframes: {
+      colors: {
+	teal: colors.teal
+      },
 	wiggle: {
 		'0%': { transform: 'rotate(0deg) scale(1)' },
 		'25%': { transform: 'rotate(-3deg) scale(1.05)' },
@@ -19,7 +24,6 @@ module.exports = {
       },
       animation: {
       	wiggle: 'wiggle 1s ease-in-out',
-	fadeIn: 'fadeIn 2s ease-in forwards"
       }
     }
   },
