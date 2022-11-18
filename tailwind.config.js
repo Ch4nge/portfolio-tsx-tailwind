@@ -6,10 +6,10 @@ module.exports = {
       'sans': ['Helvetica', 'Arial', 'sans-serif']
     },
     extend: {
-      keyframes: {
       colors: {
-	teal: colors.teal
+	teal: colors.teal,
       },
+      keyframes: {
 	wiggle: {
 		'0%': { transform: 'rotate(0deg) scale(1)' },
 		'25%': { transform: 'rotate(-3deg) scale(1.05)' },
